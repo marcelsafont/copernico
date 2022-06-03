@@ -1,0 +1,12 @@
+<svg id="forma_mbl" data-name="forma mbl" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="622.469" height="657.632" viewBox="0 0 622.469 657.632">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.675" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0098d0"/>
+      <stop offset="0.478" stop-color="#0098d0"/>
+      <stop offset="1" stop-color="#007caa"/>
+    </radialGradient>
+  </defs>
+  <rect id="Rectangle_320" data-name="Rectangle 320" width="448" height="601" fill="#0098d0"/>
+  <path id="Path_107" data-name="Path 107" d="M1696.417,295.646s-75.385-17.842-139-22.59-105.4,10.94-146.682,30.227-83.151,3.685-95.816,0-66.838-18.674-66.838-18.674V251.547l448.341.333Z" transform="translate(-1248.059 344.897)" fill="#0098d0"/>
+  <path id="Path_108" data-name="Path 108" d="M1822.284-67.014c-59.782,205.469-81.541-7.1-179.707,80.279s-75.214,213.075-29.158,251.5,192.518,23.776,265.418-25.7,150.55-86.51,192.132-85.457,112.27,10.324,125.009-57.636S1882.065-272.483,1822.284-67.014Z" transform="translate(-1573.873 291.971)" fill="url(#radial-gradient)"/>
+</svg>

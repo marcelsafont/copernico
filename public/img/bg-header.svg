@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2003.994" height="287.531" viewBox="0 0 2003.994 287.531">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_233" data-name="Rectangle 233" width="1378" height="177" transform="translate(-79)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.675" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0098d0"/>
+      <stop offset="0.478" stop-color="#0098d0"/>
+      <stop offset="1" stop-color="#007caa"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_796" data-name="Group 796" transform="translate(362 4.769)">
+    <path id="Path_107" data-name="Path 107" d="M3220.019,463.858S3069.8,417.1,2798.75,368.731s-557.388-29.819-688.953-5.456-327.844,28.348-443.98-4.434-449.791,57.193-449.791,57.193V176.326H3220.019Z" transform="translate(-1578.025 -181.096)" fill="#0098d0"/>
+    <g id="Mask_Group_6" data-name="Mask Group 6" clip-path="url(#clip-path)">
+      <path id="Path_108" data-name="Path 108" d="M2021.993-10.109c-107.847,370.667-147.1-12.8-324.191,144.824s-135.686,384.387-52.6,453.7,347.3,42.893,478.815-46.365,271.592-156.064,346.606-154.165,202.535,18.624,225.518-103.975S2129.839-380.776,2021.993-10.109Z" transform="translate(-1431.89 -457.787)" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+</svg>
