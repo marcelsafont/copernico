@@ -154,13 +154,13 @@ h1, h2, h3 {
 }
 
 .p-med {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: clamp(30px, 5vw, 40px);
+  padding-bottom: clamp(30px, 5vw, 40px);
 }
 
 .p-big {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: clamp(40px, 5vw, 80px);
+  padding-bottom: clamp(30px, 5vw, 80px);
 }
 
 .cta-link-arrow {
@@ -357,6 +357,7 @@ header#header .menu-mobile span {
 .front header#header {
   background: url("../img/bg-header-home.svg") no-repeat top center;
   background-size: cover;
+  min-height: 700px;
 }
 .front header#header .container-header {
   padding-bottom: 90px;
@@ -443,6 +444,9 @@ footer#footer .links-contact a {
   padding-right: 30px;
   background: url("../img/arrow-right-blue.svg") no-repeat center right;
 }
+footer#footer .links-contact a:hover {
+  background-image: url("../img/arrow-right-orange.svg");
+}
 footer#footer .menu-footer {
   justify-content: space-between;
   flex: 1;
@@ -508,6 +512,9 @@ footer#footer .links-xxss a.linkedin-link:hover {
 footer#footer .links-xxss a.youtube-link {
   background: url("../img/youtube-icon.svg") no-repeat center center;
 }
+footer#footer .links-xxss a.youtube-link:hover {
+  background-image: url("../img/youtube-icon-orange.svg");
+}
 
 .article-teaser {
   position: relative;
@@ -534,8 +541,8 @@ footer#footer .links-xxss a.youtube-link {
 }
 .article-teaser .content {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 40px;
+  left: 40px;
   padding-right: 15px;
 }
 .article-teaser .content * {
@@ -548,9 +555,14 @@ footer#footer .links-xxss a.youtube-link {
 .article-teaser .content .data {
   font-size: 16px;
   font-family: "poppins-medium";
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
+@media screen and (min-width: 992px) {
+  .front .paragraph-links-oferta-formativa {
+    padding-top: 0;
+  }
+}
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 1235px;
@@ -572,10 +584,17 @@ footer#footer .links-xxss a.youtube-link {
 }
 @media screen and (max-width: 992px) {
   header#header .arrow-down-mobile {
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    display: block;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  header#header .arrow-down-mobile.active {
+    transform: rotate(225deg);
   }
   header#header .search-mobile {
     display: block;
@@ -585,6 +604,36 @@ footer#footer .links-xxss a.youtube-link {
     margin-left: auto;
     margin-right: 30px;
     cursor: pointer;
+  }
+  header#header .search-mobile.close {
+    background: none;
+    position: relative;
+  }
+  header#header .search-mobile.close:after {
+    background: #fff;
+    color: #fff;
+    content: "";
+    height: 3px;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.25, 0.6, 0.36, 1);
+    position: absolute;
+    top: 50%;
+    width: 35px;
+  }
+  header#header .search-mobile.close:before {
+    background: #fff;
+    color: #fff;
+    content: "";
+    height: 3px;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    transition: all 0.4s cubic-bezier(0.25, 0.6, 0.36, 1);
+    position: absolute;
+    top: 50%;
+    width: 35px;
   }
   header#header .secondary-navigation {
     order: 2;
@@ -610,6 +659,15 @@ footer#footer .links-xxss a.youtube-link {
   header#header .menu-mobile {
     display: block;
   }
+  header#header .menu-mobile.close span:nth-child(1) {
+    transform: translateY(8px) rotateZ(45deg);
+  }
+  header#header .menu-mobile.close span:nth-child(2) {
+    display: none;
+  }
+  header#header .menu-mobile.close span:nth-child(3) {
+    transform: translateY(-1px) rotateZ(-45deg);
+  }
   header#header .container-header {
     justify-content: space-between;
     padding: 20px 15px 40px 15px;
@@ -630,14 +688,40 @@ footer#footer .links-xxss a.youtube-link {
     background-color: #0F4558;
     z-index: 15;
   }
+  header#header .navigation.show-menu-mobile .secondary-navigation {
+    margin-bottom: 0 !important;
+  }
   header#header .navigation.show-search {
     display: block;
     position: absolute;
     left: 0;
     top: 90px;
+    background-color: #0F4558;
+    text-align: center;
   }
   header#header .navigation.show-search .search-block {
     display: block;
+    padding: 10px 0 30px 0;
+    width: 90%;
+    margin: 0;
+  }
+  header#header .navigation.show-search .search-block input[type=submit] {
+    background: none;
+    width: 100px;
+    margin-left: -20px;
+    color: #161615;
+    background-color: #FFAE00;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    font-size: 10px;
+    padding: 14px;
+  }
+  header#header .navigation.show-search .search-block input[type=text] {
+    flex: 1;
+  }
+  header#header .navigation.show-search .secondary-navigation {
+    background-color: #0F4558;
+    justify-content: center;
   }
   header#header .navigation.show-search .primary-navigation, header#header .navigation.show-search .secondary-navigation nav {
     display: none;
@@ -656,6 +740,11 @@ footer#footer .links-xxss a.youtube-link {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+  }
+  header#header .navigation .primary-navigation nav ul li.expanded.active {
+    border: 0;
+    padding-bottom: 0;
   }
   header#header .navigation .primary-navigation nav ul li > a {
     font-size: 26px;
@@ -677,6 +766,7 @@ footer#footer .links-xxss a.youtube-link {
     width: calc(100% + 30px);
     margin: 10px -15px;
     padding: 15px;
+    background-color: #256983;
   }
   header#header .navigation .primary-navigation nav ul li ul.show-subitem-mobile a {
     font-size: 18px;
@@ -720,12 +810,14 @@ footer#footer .links-xxss a.youtube-link {
   .front .header-home .col-header-image {
     width: 100%;
     order: 0;
+    padding-top: 20px;
   }
   .front .header-home .col-header-image img {
     width: 100%;
   }
   .front .header-home .col-header-text {
     order: 1;
+    padding-top: 20px;
   }
   .front header#header {
     background-image: url("../img/bg-header-mobile.svg");
@@ -775,6 +867,10 @@ footer#footer .links-xxss a.youtube-link {
 
   .article-teaser {
     min-height: 340px;
+  }
+  .article-teaser .content {
+    left: 30px;
+    bottom: 30px;
   }
 }
 

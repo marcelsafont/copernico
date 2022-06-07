@@ -7,10 +7,16 @@ $(document).ready(function(){
         $(this).find('ul').removeClass('show-subitem');
     })
     $('.menu-mobile').on('click', function(){
+        $('.navigation').removeClass('show-search');
+        $('.search-mobile').removeClass('close');
+        $(this).toggleClass('close');
         $('header#header .navigation').toggleClass('show-menu-mobile');
     })
 
     $('.search-mobile').on('click', function(){
+        $('.menu-mobile').removeClass('close');
+        $('header#header .navigation').removeClass('show-menu-mobile');
+        $(this).toggleClass('close');
         $('.navigation').toggleClass('show-search');
     })
 
@@ -19,6 +25,8 @@ $(document).ready(function(){
     })
 
     $('.arrow-down-mobile').on('click', function(){
+        $(this).toggleClass('active');
         $(this).parent().find('ul').toggleClass('show-subitem-mobile');
+        $(this).parent().toggleClass('active');
     })
 })
