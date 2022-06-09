@@ -238,6 +238,9 @@ header#header{
                     font-size:14px;
                     font-family: 'poppins-regular';
                 }
+                a{
+                    color:#B9E6F7;
+                }
             }
         }
     }
@@ -254,8 +257,9 @@ header#header{
             border:0;
             width:170px;
             color:$black;
-            padding:13px 10px;
+            padding:13px 10px 13px 24px;
             font-size:14px;
+            font-family: 'poppins-regular';
         }
         input[type=submit]{
            background:url('../img/lupa.svg') no-repeat center center $white;
@@ -267,6 +271,12 @@ header#header{
             padding:10px 4px;
             appearance: none;
             cursor:pointer;
+        }
+        input[type=text]::placeholder{
+            color:#B5B5B5;
+            font-family: 'poppins-regular';
+            opacity: 1;
+            font-size:14px;
         }
     }
     .primary-navigation{
@@ -370,6 +380,7 @@ header#header{
         }
         .col-header-text{
             flex:1;
+            padding-right:30px;
             .description{
                 padding-bottom:5px;
                 p{
@@ -382,11 +393,12 @@ header#header{
             }
         }
         .col-header-image{
-            width:600px;
+            width:620px;
             text-align: right;
             img{
                 display:inline-block;
                 border-radius:22px;
+                width:100%;
             }
         }
     }
@@ -582,6 +594,15 @@ footer#footer{
             margin-right:40px;
         }
     }
+    .front{
+        .header-home{
+            padding-left:60px;
+            padding-right:60px;
+            .col-header-image{
+                width:540px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:1250px){
@@ -592,15 +613,25 @@ footer#footer{
         }
     }
     .front{
-        .header-home{       
+        .header-home{
             .col-header-image{
-                width:400px;
+                width:440px;
             }
         }
     }
+    
 }
 
 @media screen and (max-width:992px){
+    .front{
+        .header-home{
+            padding-left:20px;
+            padding-right:20px;
+            .col-header-image{
+                width:340px;
+            }
+        }
+    }
     header#header{
         .arrow-down-mobile{
             border: solid $white;

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.221" height="37.946" viewBox="0 0 36.221 37.946">
+  <g id="Group_48" data-name="Group 48" transform="translate(0.5 0.5)">
+    <path id="Path_113" data-name="Path 113" d="M25.8,24.034a4,4,0,0,1-4.8,0" transform="translate(-5.791 -5.623)" fill="none" stroke="#00aae8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_114" data-name="Path 114" d="M37.221,44.041V39.069a3.163,3.163,0,0,0-1.233-2.528c-2.129-1.631-7.2-4.507-16.378-4.507S5.37,34.916,3.233,36.541A3.163,3.163,0,0,0,2,39.069v4.973" transform="translate(-2 -7.219)" fill="none" stroke="#00aae8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_115" data-name="Path 115" d="M31.211,10.64A9.606,9.606,0,1,0,12,10.64v3.2a9.606,9.606,0,1,0,19.211,0Z" transform="translate(-3.995 -1.034)" fill="none" stroke="#00aae8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_116" data-name="Path 116" d="M31.211,12.236c-2.124,0-6.5.54-9.606-3.2-3.109,3.741-7.481,3.2-9.606,3.2" transform="translate(-3.995 -2.63)" fill="none" stroke="#00aae8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_117" data-name="Path 117" d="M26.4,44.919,23.967,37a.8.8,0,0,0-1.53,0L20,44.919" transform="translate(-5.592 -8.097)" fill="none" stroke="#00aae8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_17" data-name="Line 17" x1="4.408" transform="translate(25.015 35.598)" fill="none" stroke="#00aae8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="2.802" cy="2.802" rx="2.802" ry="2.802" transform="translate(19.211 10.006)" fill="none" stroke="#00aae8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="2.802" cy="2.802" rx="2.802" ry="2.802" transform="translate(10.406 10.006)" fill="none" stroke="#00aae8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_18" data-name="Line 18" x2="2.645" transform="translate(16.199 12.676)" fill="none" stroke="#00aae8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

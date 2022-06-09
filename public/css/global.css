@@ -252,6 +252,9 @@ header#header .secondary-navigation nav ul * {
   font-size: 14px;
   font-family: "poppins-regular";
 }
+header#header .secondary-navigation nav ul a {
+  color: #B9E6F7;
+}
 header#header .search-block {
   margin-left: 40px;
 }
@@ -266,8 +269,9 @@ header#header .search-block input[type=text] {
   border: 0;
   width: 170px;
   color: #161615;
-  padding: 13px 10px;
+  padding: 13px 10px 13px 24px;
   font-size: 14px;
+  font-family: "poppins-regular";
 }
 header#header .search-block input[type=submit] {
   background: url("../img/lupa.svg") no-repeat center center #fff;
@@ -279,6 +283,12 @@ header#header .search-block input[type=submit] {
   padding: 10px 4px;
   appearance: none;
   cursor: pointer;
+}
+header#header .search-block input[type=text]::placeholder {
+  color: #B5B5B5;
+  font-family: "poppins-regular";
+  opacity: 1;
+  font-size: 14px;
 }
 header#header .primary-navigation {
   width: 100%;
@@ -374,6 +384,7 @@ header#header .menu-mobile span {
 }
 .front .header-home .col-header-text {
   flex: 1;
+  padding-right: 30px;
 }
 .front .header-home .col-header-text .description {
   padding-bottom: 5px;
@@ -386,12 +397,13 @@ header#header .menu-mobile span {
   font-family: "poppins-regular";
 }
 .front .header-home .col-header-image {
-  width: 600px;
+  width: 620px;
   text-align: right;
 }
 .front .header-home .col-header-image img {
   display: inline-block;
   border-radius: 22px;
+  width: 100%;
 }
 
 footer#footer {
@@ -571,6 +583,14 @@ footer#footer .links-xxss a.youtube-link:hover {
   header#header .logo {
     margin-right: 40px;
   }
+
+  .front .header-home {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .front .header-home .col-header-image {
+    width: 540px;
+  }
 }
 @media screen and (max-width: 1250px) {
   header#header .logo {
@@ -579,10 +599,18 @@ footer#footer .links-xxss a.youtube-link:hover {
   }
 
   .front .header-home .col-header-image {
-    width: 400px;
+    width: 440px;
   }
 }
 @media screen and (max-width: 992px) {
+  .front .header-home {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .front .header-home .col-header-image {
+    width: 340px;
+  }
+
   header#header .arrow-down-mobile {
     border: solid #fff;
     border-width: 0 3px 3px 0;

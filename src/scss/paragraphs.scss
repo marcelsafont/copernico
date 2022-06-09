@@ -2,7 +2,7 @@
 
 .paragraph-title{
     h2{
-        max-width:40%;
+        max-width:80%;
         margin:auto;
         font-size:35px;
         text-align: center;
@@ -72,6 +72,9 @@
                 img{
                     padding-bottom:15px;
                     transition: all .3s;
+                    max-width:none;
+                    width:auto;
+                    height:auto;
                 }
                 &:hover{
                     color:$black;
