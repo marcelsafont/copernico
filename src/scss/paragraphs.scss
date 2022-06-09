@@ -89,6 +89,132 @@
     }
 }
 
+.paragraph-distribuidora-01{
+    .noticies-distribuidora{
+        width:340px;
+        h2{
+            font-size:20px;
+        }
+        .link-arrow{
+            margin-top:10px;
+            text-align: left;
+        }
+        ul{
+            list-style: none;
+            border-top:1px solid $black;
+            margin-top:20px;
+            li{
+                padding:20px 0;
+                border-bottom:1px solid $black;
+                a{
+                    font-family: 'poppins-regular';
+                    font-size:16px;
+                }
+                .data{
+                    font-family: 'poppins-regular';
+                    font-size:14px;
+                    padding-top:7px;
+                }
+            }
+        }
+    }
+    .links-distribuidora{
+        flex:1;
+        padding-right:80px;
+        ul{
+            display:grid;
+            grid-gap:23px;
+            list-style-type: none;
+            grid-template-columns: 1fr 1fr;
+            li{
+                margin:0;
+                padding:0;
+                width:100%;
+                
+                a{
+                    padding:35px;
+                    border-radius:22px;
+                    display:block;
+                    color:$black;
+                    padding-right:100px;
+                    position:relative;
+                    background-color:$white;
+                    font-family: 'poppins-regular';
+                    font-size:16px;
+                    box-shadow: 0px 4px 4px #0000000F;
+                    &:hover{
+                        background-color:$yellow;
+                        color:$black!important;
+                        &:after{
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                    &:after{
+                        position:absolute;
+                        display:block;
+                        content:"";
+                        background:url('../img/arrow-orange-border.svg') no-repeat center right;
+                        width:50px;
+                        height:50px;
+                        right:30px;
+                        top:0;
+                        bottom:0;
+                        margin-top:auto;
+                        margin-bottom:auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.paragraph-enllacos{
+    background-color:$greyblue;
+    .list-enllacos{
+        padding:30px 0;
+        ul{
+            list-style-type: none;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap:23px;
+            li {
+                a{
+                    padding:35px;
+                    border-radius:22px;
+                    display:block;
+                    color:$black;
+                    padding-right:100px;
+                    position:relative;
+                    background-color:$white;
+                    font-family: 'poppins-regular';
+                    font-size:16px;
+                    box-shadow: 0px 4px 4px #0000000F;
+                    &:hover{
+                        background-color:$yellow;
+                        color:$black!important;
+                        &:after{
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                    &:after{
+                        position:absolute;
+                        display:block;
+                        content:"";
+                        background:url('../img/arrow-orange-border.svg') no-repeat center right;
+                        width:50px;
+                        height:50px;
+                        right:30px;
+                        top:0;
+                        bottom:0;
+                        margin-top:auto;
+                        margin-bottom:auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1200px){
     .paragraph-title{
         h2{
@@ -103,6 +229,25 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
     }   
+    .paragraph-ultimes-noticies{
+        .list-noticies{
+            grid-template-columns: 1fr 1fr;
+            margin-top:20px;
+        }
+    }
+    .paragraph-distribuidora-01{
+        .d-flex{
+            flex-direction: column;
+        }
+        .noticies-distribuidora{
+            width:100%;
+            margin-top:50px;
+        }
+        .links-distribuidora{
+
+            padding-right:0px;
+        }
+    }
 }
 
 @media screen and (max-width:580px){
@@ -139,4 +284,11 @@
             
         }
     }  
+    .paragraph-distribuidora-01{
+        .links-distribuidora{
+            ul{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
 }

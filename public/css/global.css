@@ -34,6 +34,13 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "circular-book";
+  src: url("../fonts/CircularStd-Book.woff2") format("woff2");
+  src: url("../fonts/CircularStd-Book.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -555,7 +562,7 @@ footer#footer .links-xxss a.youtube-link:hover {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  padding-right: 15px;
+  padding-right: 50px;
 }
 .article-teaser .content * {
   color: #fff;
@@ -568,6 +575,101 @@ footer#footer .links-xxss a.youtube-link:hover {
   font-size: 16px;
   font-family: "poppins-medium";
   padding-top: 25px;
+}
+
+.header-content {
+  position: relative;
+  padding-bottom: 50px;
+  margin-top: -20px;
+}
+.header-content * {
+  text-align: center;
+}
+.header-content .parent-page {
+  font-family: "circular-book";
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.header-content h1 {
+  font-size: 45px;
+}
+.header-content .descr {
+  max-width: 55%;
+  margin: auto;
+  font-size: 20px;
+  font-family: "poppins-medium";
+}
+.header-content:after {
+  content: "";
+  width: 170px;
+  background-color: #0098D0;
+  height: 9px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagination nav.pager {
+  padding-top: 60px;
+}
+.pagination nav.pager ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination nav.pager ul li {
+  padding: 12px;
+}
+.pagination nav.pager ul li a {
+  font-size: 20px;
+  font-family: "poppins-medium";
+  color: #161615;
+}
+.pagination nav.pager ul li.pager__item--next, .pagination nav.pager ul li.pager__item--last, .pagination nav.pager ul li.pager__item--previous, .pagination nav.pager ul li.pager__item--first {
+  padding: 7px;
+}
+.pagination nav.pager ul li.pager__item--previous {
+  padding-right: 10px;
+}
+.pagination nav.pager ul li.pager__item--next {
+  padding-left: 10px;
+}
+.pagination nav.pager ul li.is-active a {
+  color: #0098D0;
+}
+.pagination nav.pager li.pager__item.pager__item--next span,
+.pagination nav.pager li.pager__item.pager__item--last span,
+.pagination nav.pager li.pager__item.pager__item--previous span,
+.pagination nav.pager li.pager__item.pager__item--first span {
+  display: none;
+}
+.pagination nav.pager li.pager__item.pager__item--next a,
+.pagination nav.pager li.pager__item.pager__item--last a,
+.pagination nav.pager li.pager__item.pager__item--previous a,
+.pagination nav.pager li.pager__item.pager__item--first a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #FFAE00;
+}
+.pagination nav.pager li.pager__item.pager__item--next a:hover,
+.pagination nav.pager li.pager__item.pager__item--last a:hover,
+.pagination nav.pager li.pager__item.pager__item--previous a:hover,
+.pagination nav.pager li.pager__item.pager__item--first a:hover {
+  background-color: #EF6F09;
+}
+.pagination nav.pager li.pager__item.pager__item--last a {
+  background: url("../img/arrow-first-pagination.svg") no-repeat center center #FFAE00;
+}
+.pagination nav.pager li.pager__item.pager__item--next a {
+  background: url("../img/arrow-next-pagination.svg") no-repeat center center #FFAE00;
+}
+.pagination nav.pager li.pager__item.pager__item--previous a {
+  background: url("../img/arrow-prev-pagination.svg") no-repeat center center #FFAE00;
 }
 
 @media screen and (min-width: 992px) {
@@ -830,8 +932,20 @@ footer#footer .links-xxss a.youtube-link:hover {
   footer#footer .link-contact-block > div:nth-child(2) a {
     display: block !important;
   }
+
+  .header-content .descr {
+    max-width: 100%;
+  }
+  .header-content h1 {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
+  header#header {
+    background-image: url("../img/bg-header-mobile.svg");
+    background-position: top -485px center;
+  }
+
   .front .header-home {
     flex-direction: column;
   }
@@ -889,16 +1003,25 @@ footer#footer .links-xxss a.youtube-link:hover {
   }
 }
 @media screen and (max-width: 580px) {
+  .pagination nav.pager ul li {
+    padding: 5px !important;
+  }
+
   .front .header-home h2 {
     font-size: 40px;
   }
 
   .article-teaser {
-    min-height: 340px;
+    min-height: 380px;
   }
   .article-teaser .content {
     left: 30px;
     bottom: 30px;
+    padding-right: 20px;
+  }
+
+  .header-content {
+    margin-top: 0;
   }
 }
 

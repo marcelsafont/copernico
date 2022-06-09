@@ -7,6 +7,7 @@
 @include fontFace($family: 'poppins-regular', $fontName: 'Poppins-Regular');
 @include fontFace($family: 'poppins-medium', $fontName: 'Poppins-Medium');
 @include fontFace($family: 'poppins-black', $fontName: 'Poppins-Black');
+@include fontFace($family: 'circular-book', $fontName: 'CircularStd-Book');
 // @include fontFace($family: 'sentinel-black', $fontName: 'Sentinel-Black');
 // @include fontFace($family: 'sentinel-black-italic', $fontName: 'Sentinel-BlackItalic');
 // @include fontFace($family: 'sentinel-bold', $fontName: 'Sentinel-Bold');
@@ -561,7 +562,7 @@ footer#footer{
         position:absolute;
         bottom:40px;
         left:40px;
-        padding-right:15px;
+        padding-right:50px;
         *{
             color:$white;
         }
@@ -577,12 +578,112 @@ footer#footer{
     }
 }
 
+.header-content{
+    position: relative;
+    padding-bottom:50px;
+    margin-top:-20px;
+    *{
+        text-align: center;
+    }
+    .parent-page{
+        font-family: 'circular-book';
+        font-size:16px;
+        padding-bottom:20px;
+    }
+    h1{
+        font-size:45px;
+    }
+    .descr{
+        max-width:55%;
+        margin:auto;
+        font-size:20px;
+        font-family: 'poppins-medium';
+    }
+    &:after{
+        content:"";
+        width:170px;
+        background-color:$linkblue;
+        height:9px;
+        position: absolute;
+        bottom:10px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+.pagination{
+    nav.pager{
+        padding-top:60px;
+        ul{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                padding:12px;
+                a{
+                    font-size:20px;
+                    font-family: 'poppins-medium';
+                    color:$black;
+                }
+                &.pager__item--next,
+                &.pager__item--last,
+                &.pager__item--previous,
+                &.pager__item--first{
+                    padding:7px;
+                }
+                &.pager__item--previous{
+                    padding-right:10px;
+                }
+                &.pager__item--next{
+                    padding-left:10px;
+                }
+
+                &.is-active a{
+                    color:$linkblue;
+                }
+            }
+        }
+        
+    }
+    nav.pager li.pager__item.pager__item--next span, 
+    nav.pager li.pager__item.pager__item--last span,
+    nav.pager li.pager__item.pager__item--previous span, 
+    nav.pager li.pager__item.pager__item--first span{
+        display:none;
+    }
+    nav.pager li.pager__item.pager__item--next a, 
+    nav.pager li.pager__item.pager__item--last a, 
+    nav.pager li.pager__item.pager__item--previous a, 
+    nav.pager li.pager__item.pager__item--first a{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color:$yellow;
+        &:hover{
+            background-color:$orange;
+        }
+    }
+    nav.pager li.pager__item.pager__item--last a{
+        background:url('../img/arrow-first-pagination.svg') no-repeat center center $yellow;
+    }
+    nav.pager li.pager__item.pager__item--next a{
+        background:url('../img/arrow-next-pagination.svg') no-repeat center center $yellow;
+    }
+    nav.pager li.pager__item.pager__item--previous a{
+        background:url('../img/arrow-prev-pagination.svg') no-repeat center center $yellow;
+    }
+}
+
 @media screen and (min-width:992px){
     .front{
         .paragraph-links-oferta-formativa{
             padding-top:0;
         }
     }
+    
 }
 
 @media screen and (max-width:1400px){
@@ -862,10 +963,21 @@ footer#footer{
             }
         }
     }
-    
+    .header-content{
+        .descr{
+            max-width:100%;
+        }
+        h1{
+            font-size:30px;
+        }
+    }
 }
 
 @media screen and (max-width:768px){
+    header#header{
+        background-image:url('../img/bg-header-mobile.svg');
+        background-position: top -485px center;
+    }
     .front{
         .header-home{
             flex-direction: column;
@@ -930,17 +1042,28 @@ footer#footer{
 
 
 @media screen and (max-width:580px){
+    .pagination{
+        nav.pager{
+            ul li{
+                padding:5px!important;
+            }
+        }
+    }
     .front{
         .header-home h2{
             font-size:40px;
         }
     }
     .article-teaser{
-        min-height:340px;
+        min-height:380px;
         .content{
             left:30px;
             bottom:30px;
+            padding-right:20px;
         }
+    }
+    .header-content{
+        margin-top:0;
     }
 
     

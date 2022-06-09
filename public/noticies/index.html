@@ -14,7 +14,10 @@
     <header id="header">
         <div class="d-flex container container-header">
             <div class="logo">
-                <a href="/"><img src="/img/logo.svg" alt=""></a>
+                <img src="/img/logo.svg" alt="">
+            </div>
+            <div class="search-mobile">
+           
             </div>
             <div class="menu-mobile">
                 <span></span>
@@ -46,6 +49,19 @@
 
                     <nav>
                         <ul>
+                            <li class="expanded"><a href="">Pagines</a>
+                                <ul>
+                                    <li>
+                                        <a href="/noticies">Exemple pagina Noticies</a>
+                                    </li>
+                                    <li>
+                                        <a href="/distribuidora1">Exemple pagina distribuidora 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="/distribuidora2">Exemple pagina distribuidora 2</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="expanded"><a href="">L'institut</a>
                                 <ul>
                                     <li>
@@ -89,57 +105,134 @@
     </header>
     <main>
 
-        <div class="paragraph-list-noticies paragraph-ultimes-noticies container paragraph-title">
-    <h1>Títol de la pàgina</h1>
+        <div class="header-content container">
+    <div class="parent-page">
+        Pagina pare
+    </div>
+     <h1>Títol de la pàgina</h1>
     <div class="descr">
         <p>Text principal lorem ipsum dolor set Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut ex ac sem porta gravida.</p>
     </div>
+</div>
+<div class="paragraph-list-noticies paragraph-ultimes-noticies container paragraph-title p-med pagination">
     <div class="list-noticies d-grid">
         <div class="article-teaser">
-                    <a href="">
-                        <img src="/img/image.jpg" alt="">
-                        <div class="content">
-                            <h3>Titol noticia molt llarg a veure que passa i tal i cual</h3>
-                            <div class="data">10-02-2022</div>
-                        </div>
-                    </a>
+            <a href="">
+                <img src="/img/image.jpg" alt="">
+                <div class="content">
+                    <h3>Xocolatada Solidària a favor de la investigació contra el càncer infantil</h3>
+                    <div class="data">10-02-2022</div>
                 </div>
+            </a>
+        </div>
         <div class="article-teaser">
-                    <a href="">
-                        <img src="/img/image.jpg" alt="">
-                        <div class="content">
-                            <h3>Titol noticia molt llarg a veure que passa i tal i cual</h3>
-                            <div class="data">10-02-2022</div>
-                        </div>
-                    </a>
+            <a href="">
+                <img src="/img/image.jpg" alt="">
+                <div class="content">
+                    <h3>Xocolatada Solidària a favor de la investigació contra el càncer infantil</h3>
+                    <div class="data">10-02-2022</div>
                 </div>
+            </a>
+        </div>
+        <div class="article-teaser">
+            <a href="">
+                <img src="/img/image.jpg" alt="">
+                <div class="content">
+                    <h3>Les impressores 3D del Copèrnic contra el coronavirus</h3>
+                    <div class="data">10-02-2022</div>
+                </div>
+            </a>
+        </div>
+        <div class="article-teaser">
+            <a href="">
+                <img src="/img/image.jpg" alt="">
+                <div class="content">
+                    <h3>Titol noticia molt llarg a veure que passa i tal i cual</h3>
+                    <div class="data">10-02-2022</div>
+                </div>
+            </a>
+        </div>
     </div>
+    <nav class="pager">
+        <ul class="pager__items js-pager__items">
+            <li class="pager__item pager__item--first">
+                <a href="" title="Ir a la primera página">
+                  <span class="visually-hidden">Primera página</span>
+                  <span aria-hidden="true">« Primero</span>
+                </a>
+              </li>
+                                <li class="pager__item pager__item--previous">
+                <a href="" title="Ir a la página anterior" rel="prev">
+                  <span class="visually-hidden">Página anterior</span>
+                  <span aria-hidden="true">‹‹</span>
+                </a>
+              </li>
+            <li class="pager__item is-active"><a href="">1</a></li>
+            <li class="pager__item"><a href="">2</a></li>
+            <li class="pager__item"><a href="">3</a></li>
+            <li class="pager__item"><a href="">4</a></li>
+            <li class="pager__item pager__item--next">
+                <a href="" title="Ir a la página siguiente" rel="next">
+                  <span class="visually-hidden">Siguiente página</span>
+                  <span aria-hidden="true">››</span>
+                </a>
+              </li>
+              <li class="pager__item pager__item--last">
+                <a href="" title="Ir a la última página">
+                  <span class="visually-hidden">Última página</span>
+                  <span aria-hidden="true">Último »</span>
+                </a>
+              </li>
+        </ul>    
+    </nav>
 </div>
+
  
     </main>
-    <footer id="footer">
+     <footer id="footer">
         <div class="container">
             <div class="d-flex flex-wrap">
-                <div class="link-contact-block">
-                    <h3>T'ajudem a resoldre dubtes</h3>
-                    <p>Si tens qualsevol pregunta, et responem</p>
+                <div class="link-contact-block d-flex">
+                    <div>
+
+                        <h3>T'ajudem a resoldre dubtes</h3>
+                        <p>Si tens qualsevol pregunta, et responem</p>
+                    </div>
+                    <div>
+                        <div class="cta-link-arrow">
+                            <a href="">Contacta amb nosaltres</a>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="nav-footer d-flex">
+                <div class="nav-footer d-flex p-med">
                     <div class="logo">
                         <img src="img/logo-footer.svg" alt="">
                     </div>
-                    <div class="contact">
-                       <p>Torrent del Batlle, 10 </p> 
-                        <p>08225 Terrassa - Barcelona</p> 
-                        <p>
-
-                            Telèfon: +34 937807517 
-                        </p>
-                        <p>
-
-                            Correu electrònic: a8034059@xtec.cat
-                        </p>
+                    <div class="contact d-flex">
+                        <div class="content">
+                            <p>Torrent del Batlle, 10 </p> 
+                            <p>08225 Terrassa - Barcelona</p> 
+                            <p>
+    
+                                Telèfon: +34 937807517 
+                            </p>
+                            <p>
+    
+                                Correu electrònic: <br/>a8034059@xtec.cat
+                            </p>
+                        </div>
+                       
+                        <div class="links-contact">
+                            <a href="">Contacte</a>
+                            <div class="links-xxss">
+                                <a href="https://www.twitter.com" class="twitter-link"></a>
+                                <a href="https://www.twitter.com" class="insta-link"></a>
+                                <a href="https://www.twitter.com" class="linkedin-link"></a>
+                                <a href="https://www.twitter.com" class="youtube-link"></a>
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="menu-footer d-flex">
                         <div class="menu-col">
@@ -176,6 +269,20 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="block-legals p-big">
+                        <ul>
+                            <li>
+                                © 2022 Institut Nicolau Copèrnic
+                            </li>
+                            <li>
+                                <a href="">Política de Privacitat</a> 
+                            </li>
+                            <li>
+                                
+                                <a href="">Política de Galetes</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -183,6 +290,6 @@
         </div>
 
     </footer>
-    <script src="js/functions.js"></script>
+    <script src="/js/functions.js"></script>
 </body>
 </html>
