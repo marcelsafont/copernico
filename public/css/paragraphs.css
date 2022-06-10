@@ -59,18 +59,21 @@
   width: 100%;
   height: 100%;
   color: #161615;
-  padding: 30px 25px;
+  padding: 27px 25px 15px 25px;
   border-radius: 22px;
   transition: all 0.3s;
   font-size: 16px;
   font-family: "poppins-regular";
 }
 .paragraph-accesos-directes .list-accesos > div a img {
-  padding-bottom: 15px;
+  padding-bottom: 12px;
   transition: all 0.3s;
   max-width: none;
   width: auto;
   height: auto;
+}
+.paragraph-accesos-directes .list-accesos > div a p {
+  margin-top: 0;
 }
 .paragraph-accesos-directes .list-accesos > div a:hover {
   color: #161615;
@@ -220,6 +223,9 @@
 
 .paragraph-enllacos {
   background-color: #DEE8F4;
+}
+.paragraph-enllacos h2 {
+  text-align: center;
 }
 .paragraph-enllacos .list-enllacos ul {
   list-style-type: none;
