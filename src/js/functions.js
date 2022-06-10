@@ -11,6 +11,13 @@ $(document).ready(function(){
         $('.search-mobile').removeClass('close');
         $(this).toggleClass('close');
         $('header#header .navigation').toggleClass('show-menu-mobile');
+        if(!$('#header .navigation').hasClass('show-search') && !$('#header .navigation').hasClass('show-menu-mobile')){
+            
+            $('#header .container-header').removeClass('show-menu');
+        }else{
+            
+            $('#header .container-header').addClass('show-menu');
+        }
     })
 
     $('.search-mobile').on('click', function(){
@@ -18,6 +25,12 @@ $(document).ready(function(){
         $('header#header .navigation').removeClass('show-menu-mobile');
         $(this).toggleClass('close');
         $('.navigation').toggleClass('show-search');
+        if(!$('#header .navigation').hasClass('show-search') && !$('#header .navigation').hasClass('show-menu-mobile')){
+            $('#header .container-header').removeClass('show-menu');
+        }else{
+            console.log('2')
+            $('#header .container-header').addClass('show-menu');
+        }
     })
 
     $('.primary-navigation > nav > ul > li.expanded').each(function(){

@@ -12,7 +12,7 @@ layout: base.njk
     </div>
 </div>
 
-{% include 'paragraphs/paragraph-intro-distribuidora.njk' %} 
+<!--paragraphs -->
 
-{% include 'paragraphs/paragraph-distribuidora-02.njk' %}   
+{% include 'paragraphs/paragraph-distribuidora-03.njk' %}   
 {% include 'paragraphs/paragraph-enllacos.njk' %}  
