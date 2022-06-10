@@ -426,6 +426,8 @@ header#header .menu-mobile span {
 .front .header-home {
   justify-content: space-between;
   padding-bottom: 100px;
+  padding-left: 65px;
+  padding-right: 65px;
 }
 .front .header-home h2 {
   font-size: 55px;
@@ -768,10 +770,6 @@ footer#footer .links-xxss a.youtube-link:hover {
     margin-right: 40px;
   }
 
-  .front .header-home {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
   .front .header-home .col-header-image {
     width: 540px;
   }
@@ -890,7 +888,7 @@ footer#footer .links-xxss a.youtube-link:hover {
   }
   header#header .container-header {
     justify-content: space-between;
-    padding: 20px 15px 80px 15px;
+    padding: 20px 15px 70px 15px;
     flex-wrap: wrap;
     align-items: center;
   }
@@ -1055,6 +1053,10 @@ footer#footer .links-xxss a.youtube-link:hover {
     width: 100%;
     padding-bottom: 20px;
   }
+
+  .front .header-home h2 {
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   .front .header-home {
@@ -1091,10 +1093,6 @@ footer#footer .links-xxss a.youtube-link:hover {
 
   .pagination nav.pager ul li {
     padding: 5px !important;
-  }
-
-  .front .header-home h2 {
-    font-size: 40px;
   }
 
   .article-teaser {
