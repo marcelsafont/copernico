@@ -140,6 +140,12 @@
         }
     }
 }
+
+.paragraph-distribuidora-02{
+    .links-distribuidora{
+        padding-right:0;
+    }
+}
 .link-no-box-arrow a{
     color:$black;
     position:relative;
@@ -279,9 +285,14 @@
             max-width:100%;
         }
     }
+    
 }
 
 @media screen and (max-width:992px){
+    .paragraph-intro-distribuidora .content{
+        padding-left:0;
+        padding-right:0;
+    }
     .paragraph-enllacos{
         .list-enllacos ul{
             grid-template-columns: 1fr 1fr;
@@ -316,6 +327,11 @@
 @media screen and (max-width:580px){
     .paragraph-enllacos{
         .list-enllacos ul{
+            grid-template-columns: 1fr;
+        }
+    }
+    .paragraph-distribuidora-02 .links-distribuidora{
+        ul{
             grid-template-columns: 1fr;
         }
     }
