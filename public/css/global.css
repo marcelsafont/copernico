@@ -177,6 +177,20 @@ h1, h2, h3, b, strong {
     .cta-link-arrow a:hover:after {
       background-color: #EF6F09; }
 
+.link-arrow-doc a {
+  padding: 10px 0;
+  position: relative;
+  display: block; }
+  .link-arrow-doc a:after {
+    content: "";
+    background: url("../img/icon-pdf.svg") no-repeat center center;
+    position: absolute;
+    right: 10px;
+    height: 30px;
+    width: 30px; }
+  .link-arrow-doc a:hover:after {
+    background: url("../img/icon-pdf-hover.svg") no-repeat center center; }
+
 .cta-link-arrow-bg-yellow a {
   background-color: #FFAE00;
   padding: 10px 70px 10px 20px;

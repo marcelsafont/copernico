@@ -202,6 +202,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px; }
+  .paragraph-galeria-imatges .list-images .field-caption {
+    font-size: 16px;
+    font-family: 'poppins-regular';
+    padding-left: 0; }
+
+.paragraph-llista-logos .llista-logos {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px; }
+
+.doc-teaser {
+  border-bottom: 1px solid #161615;
+  padding: 5px 0; }
 
 @media screen and (max-width: 1200px) {
   .paragraph-title h2 {
